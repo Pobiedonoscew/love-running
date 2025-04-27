@@ -47,14 +47,17 @@ h1 {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-    
+
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -67,20 +70,23 @@ nav {
     top: 100%;
 
 }
+
 /* Nav Toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
 
 /* Main Content */
 main {
-    background-color: blue;
+    background-color: rgb(139, 171, 212);
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -89,4 +95,29 @@ main {
 /* Footer */
 footer {
     background-color: rgb(15, 5, 5);
+}
+
+/* Media Query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+
+    }
+    .nav-toggle-label {
+        display: none;
+    }
 }
