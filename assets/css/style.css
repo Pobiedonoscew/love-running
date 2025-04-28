@@ -26,6 +26,9 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+.hidden-heading {
+    display: none;
+}
 
 /* Header */
 header {
@@ -167,6 +170,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -179,6 +183,7 @@ main {
     /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
 }
+
 #times h3 {
     /* Override the heading color set in general styles */
     color: #fafafa;
@@ -259,7 +264,7 @@ main {
         text-align: end;
         align-self: flex-end;
     }
-    
+
 
 }
 
@@ -270,14 +275,15 @@ main {
     }
 }
 
-@media screen and (min-width: 1200px) {    
+@media screen and (min-width: 1200px) {
+
     /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -289,11 +295,11 @@ main {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
